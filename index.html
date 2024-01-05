@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="shortcut icon" href="./assets/imgs/logo-sm.png" type="image/x-icon">
+    <meta name="description" content="Game Over Website">
+    <meta name="keywords" content="Game Over , موقع العاب">
+    <meta name="author" content="Mohamed Yasser">
+    <!-- ========>Font Aweosome<========== -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <!--^ ==============>BootStrap Style<================== -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- &==============>Google Fonts<===================== -->
+    <!-- <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Nerko+One&display=swap"
+        rel="stylesheet"> -->
+    <!--! ==============>Main Style<================== -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <section class="games ">
+        <header>
+            <img src="./assets/imgs/wraper.png" alt="header Logo" class="w-100">
+        </header>
+        <nav class="navbar navbar-expand-lg position-sticky  top-0  z-3 col-md-6 col-lg-9 mx-auto ">
+            <div class="container">
+                <h5 class="navbar-brand text-uppercase mb-0"><img src="./assets/imgs/logo-sm.png" alt="">Game Reviews
+                </h5>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-uppercase" aria-current="page" role="button"
+                                data-category="mmorpg">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" role="button" data-category="shooter">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" role="button" data-category="sailing">Sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" role="button" data-category="permadeath">Permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" role="button" data-category="superhero">SuperHero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" role="button" data-category="pixel">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="games-cards my-5">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-lg-4 g-4">
+                </div>
+            </div>
+        </main>
+
+
+    </section>
+    <section class="details d-none mb-3">
+        <div class="container">
+            <header class="d-flex justify-content-between align-items-center">
+                <h2 class="py-4">Details Game</h2>
+                <button class="btn-close btn-close-white" id="btnClose"></button>
+            </header>
+            <div class="row" id="details-content">
+            </div>
+        </div>
+    </section>
+    <div class="loading d-none">
+        <span class="loader"></span>
+    </div>
+    <div class="card h-100 bg-transparent text-white mx-4 noGames d-none">
+        <p class="text-center my-2">No Games To Show</p>
+    </div>
+
+    <!--! ==============>BootStrap JS file<================== -->
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <!--& ==============>Main JS file<================== -->
+    <script src="./assets/js/main.js" type="module"></script>
+</body>
+
+</html>
